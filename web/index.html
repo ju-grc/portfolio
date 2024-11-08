@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../ressources/css/styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+<nav id="desktop-nav">
+    <div class="logo">Julien Garcia</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about" class="color">A propos</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="../ressources/images/moi2.jpg" alt="photo de profil" />
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Julien Garcia</h1>
+        <p class="section__text__p2">Etudiant en BUT Informatique</p>
+        <div class="btn-container">
+            <button
+                    class="btn btn-color-2"
+                    onclick="window.open('')"
+            >
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img
+                    src="../ressources/images/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://linkedin.com/'"
+            />
+            <img
+                    src="../ressources/images/github.png"
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/'"
+            />
+        </div>
+    </div>
+</section>
+
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Julien Garcia. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
