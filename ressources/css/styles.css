@@ -1,5 +1,4 @@
-/* GENERAL */
-
+/** GENERAL **/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -7,67 +6,70 @@
     padding: 0;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
-p {
-    color: rgb(85, 85, 85);
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-/* TRANSITION */
-
-a,
-.btn {
-    transition: all 300ms ease;
-}
-
-/* DESKTOP NAV */
-
-nav,
-.nav-links {
+main {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-nav {
+header nav, footer nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    display: flex;
 }
 
-.nav-links {
+header .nav-links, footer .nav-links {
+    display: flex;
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
 }
 
-a {
+header a, footer a {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
 }
 
-.desktop-nav .nav-links a .color{
-    color: #EAACF2;
-}
-
-a:hover {
+header a:hover, footer a:hover {
     color: #EAACF2;
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
 }
 
-.logo {
-    font-size: 2rem;
+/* ANNIMATION a ET bouton CHARGEMENT PAGE*/
+a, .btn {
+    transition: all 300ms ease;
 }
 
-.logo:hover {
+/** HEADER **/
+header .color {
+    color: #EAACF2;
+}
+header .logo {
+    font-size: 2rem;
+}
+header .logo:hover {
     cursor: default;
+}
+
+/** FOOTER **/
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p {
+    text-align: center;
 }
 
 /* SECTIONS */
@@ -80,17 +82,14 @@ section {
     min-height: fit-content;
 }
 
-.section-container {
-    display: flex;
-}
 
 /* PROFILE SECTION */
 
 #profile {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 5rem;
-    height: 80vh;
+    height: 60vh;
 }
 
 .section__pic-container {
@@ -98,9 +97,13 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .section__pic-container img {
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
 }
 
@@ -201,3 +204,141 @@ footer {
 footer p {
     text-align: center;
 }
+
+
+/** COMPETENCES **/
+.skills-section {
+    padding: 40px;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    height: 500px;
+    border-radius: 2%;
+}
+.skills-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.skill-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-item:hover {
+    transform: scale(1.1);
+}
+.skill-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #C8D746; /* Couleur icône  #4CAF50*/
+}
+.skill-item p {
+    font-size: 1em;
+    margin: 0;
+}
+
+
+/** QUI SUIS-JE ? **/
+.about {
+    padding: 40px;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    width: 40%;
+    height: 10%;
+    margin: 150px auto 50px auto;
+    border-radius: 2%;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about .paragraphe {
+    width: 70%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.about .paragraphe p {
+    text-justify: auto;
+    margin: 20px;
+}
+
+
+.fleche {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.fleche a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
