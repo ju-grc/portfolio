@@ -293,7 +293,172 @@ footer p {
 }
 
 
+/***** PAGE PROJETS *****/
+.projets {
 
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    padding: 10px;
+    height: 350px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/*** NDI page ***/
+/* Style for the main content of the page */
+
+.ndi {
+    padding: 4rem 2rem;
+
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.ndi h1 {
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+
+.ndi p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+.ndi-titre {
+    margin-bottom: 2rem;
+}
+
+.ndi-contexte, .ndi-methode, .ndi-competence, .ndi-contribution {
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.ndi h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #4CAF50;
+}
+
+.ndi ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.ndi ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.screenshots {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.screenshots img {
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.video video {
+    max-width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ndi-contribution ul {
+    text-align: left;
+}
+
+.ndi-contribution ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.ndi-contexte, .ndi-competence {
+    width: 60%;
+}
+
+.ndi-competence {
+    height: 300px;
+}
+.ndi-competence .skills-section {
+    height: 200px;
+}
+
+.ndi-methode, .ndi-contribution {
+    width: 70%;
+}
 
 
 
