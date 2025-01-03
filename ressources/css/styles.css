@@ -354,9 +354,7 @@ footer p {
 }
 
 /*** NDI page ***/
-/* Style for the main content of the page */
-
-.ndi {
+.projet {
     padding: 4rem 2rem;
 
     color: #333;
@@ -367,24 +365,26 @@ footer p {
     text-align: center;
 }
 
-.ndi h1 {
+.projet-titre {
+    margin-bottom: 2rem;
+}
+
+.projet h1 {
     font-size: 3rem;
     font-weight: 600;
 
 }
 
-.ndi p {
+.projet p {
     font-size: 1.2rem;
     line-height: 1.8;
     max-width: 800px;
     margin: auto;
 }
 
-.ndi-titre {
-    margin-bottom: 2rem;
-}
 
-.ndi-contexte, .ndi-methode, .ndi-competence, .ndi-contribution {
+
+.projet-contexte, .projet-methode, .projet-competence, .projet-contribution, .projet-train-regles, .projet-resultat {
     background-color: #f4f4f9;
     border-radius: 10px;
     padding: 2rem;
@@ -392,20 +392,20 @@ footer p {
 
 }
 
-.ndi h2 {
+.projet h2 {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
     color: #4CAF50;
 }
 
-.ndi ul {
+.projet ul {
     list-style: none;
     padding: 0;
     margin: 1rem 0;
 }
 
-.ndi ul li {
+.projet ul li {
     margin-bottom: 0.8rem;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -435,75 +435,28 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.ndi-contribution ul {
+.projet-contribution ul {
     text-align: left;
 }
 
-.ndi-contribution ul li {
+.projet-contribution ul li {
     margin-bottom: 0.8rem;
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
-.ndi-contexte, .ndi-competence {
+.projet-contexte, .projet-competence, .projet-resultat {
     width: 60%;
 }
 
-.ndi-competence {
+.projet-competence {
     height: 300px;
 }
-.ndi-competence .skills-section {
+.projet-competence .skills-section {
     height: 200px;
 }
 
-.ndi-methode, .ndi-contribution {
+.projet-methode, .projet-contribution, .projet-train-regles {
     width: 70%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
