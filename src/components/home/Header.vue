@@ -36,7 +36,7 @@ import { RouterLink } from 'vue-router';
         </RouterLink>
 
         <RouterLink
-            to="/contact"
+            to="/#contact"
             class="px-8 py-3.5 rounded-full border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
         >
           Me contacter
