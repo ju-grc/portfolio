@@ -31,7 +31,7 @@ const competences = [
 const isLightboxOpen = ref(false);
 const currentImage = ref('');
 
-const openLightbox = (imgSrc) => {
+const openLightbox = (imgSrc: string) => {
   currentImage.value = imgSrc;
   isLightboxOpen.value = true;
   document.body.style.overflow = 'hidden';
