@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 
 import imgNDI from '@/assets/img/projets/ndi25/NUIT INFO 2025.png';
