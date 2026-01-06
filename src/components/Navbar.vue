@@ -6,13 +6,10 @@ const route = useRoute();
 const links = [
   { name: 'Accueil', path: '/' },
   { name: 'Projets', path: '/projects' },
-  { name: 'Contact', path: '/#contact' },
+  { name: 'Apprentissages', path: '/apprentissages' },
 ];
 
 const isActive = (path: string) => {
-  if (path.includes('#')) {
-    return route.hash === '#contact';
-  }
   if (path === '/') {
     return route.path === '/' && !route.hash;
   }

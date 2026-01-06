@@ -12,7 +12,9 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix --cache"
+    "lint": "eslint . --fix --cache",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
@@ -28,6 +30,7 @@
     "@vue/tsconfig": "^0.8.1",
     "eslint": "^9.39.2",
     "eslint-plugin-vue": "~10.6.2",
+    "gh-pages": "^6.3.0",
     "jiti": "^2.6.1",
     "npm-run-all2": "^8.0.4",
     "typescript": "~5.9.3",
