@@ -1,15 +1,25 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+// IMPORT DES ASSETS
 import imgPrivateBin from '@/assets/img/projets/privatebin/privatebin_0.png';
 import imgPrivateBinInterface from '@/assets/img/projets/privatebin/interface.png';
 
-const gallery = [
-  { src: imgPrivateBinInterface },
+interface GalleryItem {
+  src: string;
+  caption: string;
+}
+
+interface StackItem {
+  name: string;
+  icon: string;
+}
+
+const gallery: GalleryItem[] = [
+  { src: imgPrivateBinInterface, caption: "Interface personnalisée CibleWeb" },
 ];
 
-// Stack Technique
-const stack = [
+const stack: StackItem[] = [
   { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
   { name: 'Bash / Shell', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg' },
   { name: 'Linux (Ubuntu)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' },
@@ -28,7 +38,7 @@ const competences = [
 const isLightboxOpen = ref(false);
 const currentImage = ref('');
 
-const openLightbox = (imgSrc) => {
+const openLightbox = (imgSrc: string) => {
   currentImage.value = imgSrc;
   isLightboxOpen.value = true;
   document.body.style.overflow = 'hidden';
