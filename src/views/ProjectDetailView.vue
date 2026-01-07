@@ -5,6 +5,7 @@ import Contact from '@/components/Contact.vue';
 
 import ProjectNDI from '@/components/projects/ProjectNDI.vue';
 import ProjectPrivatebin from '@/components/projects/ProjectPrivatebin.vue';
+import ProjectInterfaceComptable from "@/components/projects/ProjectInterfaceComptable.vue";
 
 const route = useRoute();
 const projectId = Number(route.params.id);
@@ -16,6 +17,7 @@ const projectComponent = computed(() => {
     // case 3: return ProjectGrabastar;
     // case 4: return ProjectCapital;
     case 5: return ProjectPrivatebin;
+    case 6: return ProjectInterfaceComptable;
     default: return null;
   }
 });

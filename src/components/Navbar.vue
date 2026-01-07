@@ -13,6 +13,10 @@ const isActive = (path: string) => {
   if (path === '/') {
     return route.path === '/' && !route.hash;
   }
+  if (path === '/projects') {
+    return route.path.startsWith('/project');
+  }
+
   return route.path.startsWith(path);
 };
 </script>
