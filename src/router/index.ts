@@ -1,7 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ProjectsView from "@/views/ProjectsView.vue"
+import ProjectsView from '@/views/ProjectsView.vue'
 import ProjectDetailView from '@/views/ProjectDetailView.vue'
+import ApprentissagesView from '@/views/ApprentissagesView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -21,6 +22,11 @@ const router = createRouter({
       component: ProjectDetailView,
       name: 'project-detail'
     },
+    {
+      path: '/apprentissages',
+      component: ApprentissagesView,
+      name: 'apprentissages'
+    }
   ],
   scrollBehavior(to, from, savedPosition) {
     // 1. Si il y a un hash (ex: #contact), on scrolle vers l'élément de manière fluide
