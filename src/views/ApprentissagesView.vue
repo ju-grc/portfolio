@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import Contact from '@/components/Contact.vue';
 
-// Données avec les liens mis à jour vers les projets (/project/6 et /project/7)
 const competences = ref([
   {
     id: 2,
@@ -34,7 +32,7 @@ Ce projet m’a aussi permis de me confronter directement aux enjeux de la sécu
 Enfin, j’ai également pris en compte les aspects environnementaux et sociétaux (AC4). L’algorithme ayant un coût computationnel élevé, j’ai optimisé les traitements pour réduire la consommation de ressources (temps CPU, mémoire), et ainsi limiter l’impact environnemental. Sur le plan sociétal, la sécurisation des données client contribue à renforcer la protection de la vie privée, un enjeu majeur dans notre société numérique.
 
 Ainsi, ce projet a été une occasion concrète d’appliquer et de valider la compétence visée, à travers un travail complet allant de l’analyse du besoin à l’implémentation, en passant par l’optimisation et la sécurisation du code.`,
-        link: "/project/6" // Lien vers Gestion Commerciale (RSA)
+        link: "/project/6"
       }
     ]
   },
@@ -54,7 +52,7 @@ Ainsi, ce projet a été une occasion concrète d’appliquer et de valider la c
         content: `Dans le cadre des travaux pratiques du module réseau, j’ai conçu plusieurs applications client-serveur en langage C, en utilisant l’API socket avec le protocole TCP/IP. Ces applications permettaient d’établir une communication fiable entre deux machines pour l’échange de messages textuels ou de fichiers.
 
 Ce travail m’a permis de valider l’AC1, car il m’a donné l’opportunité de maîtriser la création de sockets, la gestion des connexions multiples via select() et la structuration des échanges réseau. J’ai également implémenté des mécanismes de détection et gestion des erreurs réseau, et respecté les normes liées au protocole TCP pour garantir une communication fiable et structurée.`,
-        link: null // Pas de projet dédié
+        link: null
       },
       {
         title: "Sécurisation de l’authentification utilisateur",
@@ -63,7 +61,7 @@ Ce travail m’a permis de valider l’AC1, car il m’a donné l’opportunité
 J’ai également veillé à la sécurité des sessions en régénérant les identifiants de session et en configurant les cookies avec les options HttpOnly et Secure.
 
 Cette mise en œuvre m’a permis de valider l’AC3 en assurant la protection des données sensibles des utilisateurs face à des menaces courantes telles que le vol de mots de passe, les attaques par force brute ou le vol de session. J’ai appliqué les bonnes pratiques de sécurité web et suivi les recommandations de l’OWASP.`,
-        link: "/project/7" // Lien vers E-Commerce (Hachage)
+        link: "/project/7"
       }
     ]
   },
@@ -86,7 +84,7 @@ Cette mise en œuvre m’a permis de valider l’AC3 en assurant la protection d
 Cette réalisation m'a permis de travailler sur l'AC2 en mettant en œuvre des mécanisme de securité comme le hachage de mot de passe, la préparation de requêtes SQL limitant les injections de tous type.
 
 Également, ce travail m'a permis de développer l'AC1 en créant une interface qui simplifie les opérations CRUD (Create, Read, Update, Delete) et en implémentant des mise en cache pour réduire la charge sur la base de données. Ce qui a impliqué les compétences CE4.01, CE4.02 et CE4.04 en respectant les règlementations sur le respect de la vie privé, en assurant la cohérence et la qualité du code et pour finir en respectant les enjeux économiques, sociétaux et écologiques de l'utilisation du stockage de données.`,
-        link: "/project/7" // Lien vers E-Commerce
+        link: "/project/7"
       },
       {
         title: "Interface de gestion commerciale et comptable",
@@ -95,7 +93,7 @@ Cette réalisation m'a permis de travailler sur l'AC2 en mettant en œuvre des m
 Cette réalisation m’a permis de valider l’AC3 en mettant en place des tableaux de bord dynamiques et interactifs pour les utilisateurs. Ces tableaux affichaient des indicateurs clés (Nom de compte, informations bancaires, paiement, etc.) sous forme de tableaux et de visualisations créés avec la librairie DataTables de JavaScript.
 
 J’ai également développé des fonctionnalités de filtres, tris et exports (PDF, CSV) permettant une restitution personnalisée et exploitable des données. J’ai également mobilisé l’AC4 en traitant des données hétérogènes provenant de différentes sources comme des fichiers Excel transmis par les commerciaux et des informations saisies directement via l'interface utilisateur. Cela m’a amené à implémenter des mécanismes de nettoyage, validation, formatage et transformation des données pour assurer leur intégration dans la base de données de manière cohérente.`,
-        link: "/project/6" // Lien vers Gestion Commerciale
+        link: "/project/6"
       }
     ]
   }
@@ -221,7 +219,5 @@ const toggleCompetence = (id: number) => {
       </div>
 
     </div>
-
-    <Contact />
   </div>
 </template>

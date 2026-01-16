@@ -6,7 +6,6 @@ import imgLogin from '@/assets/img/projets/ecommerce/login_page.png';
 import imgAccount from '@/assets/img/projets/ecommerce/account_page.png';
 import imgAdmin from '@/assets/img/projets/ecommerce/admin_page.png';
 
-// TYPES
 interface GalleryItem {
   src: string;
   caption: string;
@@ -41,7 +40,6 @@ const gallery: GalleryItem[] = [
   },
 ];
 
-// STACK TECHNIQUE
 const stack: StackItem[] = [
   { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
@@ -50,7 +48,6 @@ const stack: StackItem[] = [
   { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
 ];
 
-// COMPÉTENCES CLES
 const competences = [
   "Architecture MVC",
   "Sécurité (Hachage & Salage)",
@@ -59,7 +56,6 @@ const competences = [
   "Travail en équipe (GitLab)"
 ];
 
-// LIGHTBOX LOGIC
 const isLightboxOpen = ref(false);
 const currentImage = ref('');
 
@@ -80,7 +76,7 @@ const closeLightbox = () => {
   <article>
     <header class="mb-12">
       <div class="flex flex-wrap gap-3 mb-4">
-        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm font-bold rounded-full">WEB</span>
+        <span class="px-3 py-1 bg-indigo-100 text-indigo-600 text-sm font-bold rounded-full">WEB</span>
       </div>
       <h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
         Site E-Commerce : Déguisements pour animaux

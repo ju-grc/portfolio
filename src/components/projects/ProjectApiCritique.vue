@@ -6,7 +6,6 @@ import imgSwagger from '@/assets/img/projets/critiquejus/swagger_ui.png';
 import imgJson from '@/assets/img/projets/critiquejus/json_response.png';
 import imgFront from '@/assets/img/projets/critiquejus/front_mobile.png';
 
-// TYPES
 interface GalleryItem {
   src: string;
   caption: string;
@@ -18,7 +17,6 @@ interface StackItem {
   icon: string;
 }
 
-// GALERIE D'IMAGES
 const gallery: GalleryItem[] = [
   {
     src: imgSwagger,
@@ -37,16 +35,14 @@ const gallery: GalleryItem[] = [
   },
 ];
 
-// STACK TECHNIQUE
 const stack: StackItem[] = [
   { name: 'Symfony', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg' },
   { name: 'PHP 8', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
-  { name: 'JWT', icon: 'https://jwt.io/img/pic_logo.svg' }, // Logo JWT générique
+  { name: 'JWT', icon: 'https://jwt.io/img/pic_logo.svg' },
   { name: 'Vue.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' }
 ];
 
-// COMPÉTENCES CLES
 const competences = [
   "Conception API REST (Niveau 3 Richardson)",
   "Sérialisation & Groupes de données",
@@ -55,7 +51,6 @@ const competences = [
   "Documentation OpenAPI"
 ];
 
-// LIGHTBOX LOGIC
 const isLightboxOpen = ref(false);
 const currentImage = ref('');
 
@@ -76,7 +71,7 @@ const closeLightbox = () => {
   <article>
     <header class="mb-12">
       <div class="flex flex-wrap gap-3 mb-4">
-        <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-bold rounded-full">Data</span>
+        <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-bold rounded-full">DATA</span>
         <span class="px-3 py-1 bg-sky-100 text-sky-700 text-sm font-bold rounded-full">Backend API</span>
       </div>
       <h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">

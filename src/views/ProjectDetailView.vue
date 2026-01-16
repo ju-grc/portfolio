@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useRoute, RouterLink } from 'vue-router';
-import Contact from '@/components/Contact.vue';
-
 import ProjectNDI from '@/components/projects/ProjectNDI.vue';
 import ProjectGrabastar from '@/components/projects/ProjectGrabastar.vue';
 import ProjectPrivatebin from '@/components/projects/ProjectPrivatebin.vue';
 import ProjectInterfaceComptable from "@/components/projects/ProjectInterfaceComptable.vue";
 import Projectecommerce from "@/components/projects/Projectecommerce.vue";
 import ProjectApiCritique from "@/components/projects/ProjectApiCritique.vue";
+import ProjectCapitalwars from "@/components/projects/ProjectCapitalwars.vue";
 
 const route = useRoute();
 const projectId = Number(route.params.id);
@@ -17,7 +16,7 @@ const projectComponent = computed(() => {
   switch (projectId) {
     case 1: return ProjectNDI;
     case 2: return ProjectApiCritique;
-    // case 3: return ProjectGrabastar;
+    case 3: return ProjectCapitalwars;
     case 4: return ProjectGrabastar;
     case 5: return ProjectPrivatebin;
     case 6: return ProjectInterfaceComptable;
@@ -45,7 +44,5 @@ const projectComponent = computed(() => {
       </div>
 
     </div>
-
-    <Contact />
   </div>
 </template>

@@ -1,13 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-// IMPORT DES ASSETS
-// Tu devras faire les captures d'écran toi-même des pages indiquées
 import imgHome from '@/assets/img/projets/grabastar/4.jpg';
 import imgProfile from '@/assets/img/projets/grabastar/profile_upload.png';
 import imgAdmin from '@/assets/img/projets/grabastar/admin_users.png';
 
-// TYPES
 interface GalleryItem {
   src: string;
   caption: string;
@@ -19,7 +16,6 @@ interface StackItem {
   icon: string;
 }
 
-// GALERIE D'IMAGES
 const gallery: GalleryItem[] = [
   {
     src: imgHome,
@@ -38,18 +34,16 @@ const gallery: GalleryItem[] = [
   },
 ];
 
-// STACK TECHNIQUE
 const stack: StackItem[] = [
   { name: 'Symfony 6', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg' },
   { name: 'PHP 8', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
-  { name: 'Twig', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' }, // Icone HTML par défaut pour Twig
+  { name: 'Twig', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
   { name: 'CSS3 Custom', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
   { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
   { name: 'GitLab', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg' }
 ];
 
-// COMPÉTENCES CLES
 const competences = [
   "Développement Symfony Avancé",
   "Création de Commandes Console",
@@ -58,7 +52,6 @@ const competences = [
   "Travail en équipe (4 personnes)"
 ];
 
-// LIGHTBOX LOGIC
 const isLightboxOpen = ref(false);
 const currentImage = ref('');
 
@@ -79,7 +72,7 @@ const closeLightbox = () => {
   <article>
     <header class="mb-12">
       <div class="flex flex-wrap gap-3 mb-4">
-        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-bold rounded-full">WEB</span>
+        <span class="px-3 py-1 bg-indigo-100 text-indigo-600 text-sm font-bold rounded-full">WEB</span>
       </div>
       <h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
         Grabastar

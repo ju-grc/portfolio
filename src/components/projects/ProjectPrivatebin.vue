@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-// IMPORT DES ASSETS
 import imgPrivateBin from '@/assets/img/projets/privatebin/privatebin_0.png';
 import imgPrivateBinInterface from '@/assets/img/projets/privatebin/interface.png';
 
@@ -55,8 +54,7 @@ const closeLightbox = () => {
   <article>
     <header class="mb-12">
       <div class="flex flex-wrap gap-3 mb-4">
-        <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-sm font-bold rounded-full">Système</span>
-        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-bold rounded-full">Stage</span>
+        <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm font-bold rounded-full">SYSTÈME</span>
       </div>
       <h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
         Installation de PrivateBin

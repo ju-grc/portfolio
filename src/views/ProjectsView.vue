@@ -1,16 +1,12 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { RouterLink } from 'vue-router'; // Important pour les liens
-import Contact from '@/components/Contact.vue';
-import { projects } from '@/data/projects'; // <-- On importe les données externes
+import { RouterLink } from 'vue-router';
+import { projects } from '@/data/projects';
 
-// 1. Catégories de filtres
 const categories = ["Tous", "Web", "Data", "Système"];
 const activeCategory = ref("Tous");
 
-// Note: On a supprimé les données "const projects = [...]" ici car elles sont importées
 
-// 3. Logique de filtrage
 const filteredProjects = computed(() => {
   if (activeCategory.value === "Tous") {
     return projects;
@@ -107,8 +103,6 @@ const filteredProjects = computed(() => {
       </div>
 
     </div>
-
-    <Contact />
   </div>
 </template>
 

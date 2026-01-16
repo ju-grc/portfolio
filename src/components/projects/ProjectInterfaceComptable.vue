@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-// IMPORT DES ASSETS
 import gestioncom from '@/assets/img/projets/gestioncom/interface.jpeg';
 import imgInterface from '@/assets/img/projets/gestioncom/interface_dashboard.png';
 import imgExcel from '@/assets/img/projets/gestioncom/import_export.png';
 
-// TYPES
 interface GalleryItem {
   src: string;
   caption: string;
@@ -17,13 +15,11 @@ interface StackItem {
   icon: string;
 }
 
-// GALERIE D'IMAGES
 const gallery: GalleryItem[] = [
   { src: imgInterface, caption: "Tableau de bord et suivi des paiements" },
   { src: imgExcel, caption: "Module d'import/export Excel" },
 ];
 
-// STACK TECHNIQUE
 const stack: StackItem[] = [
   { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
@@ -33,7 +29,6 @@ const stack: StackItem[] = [
   { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' }
 ];
 
-// COMPÉTENCES CLES
 const competences = [
   "Développement Full Stack",
   "Sécurité (Chiffrement RSA)",
@@ -42,7 +37,6 @@ const competences = [
   "Architecture MVC (Modulaire)"
 ];
 
-// LIGHTBOX LOGIC
 const isLightboxOpen = ref(false);
 const currentImage = ref('');
 
@@ -63,8 +57,7 @@ const closeLightbox = () => {
   <article>
     <header class="mb-12">
       <div class="flex flex-wrap gap-3 mb-4">
-        <span class="px-3 py-1 bg-cyan-100 text-cyan-700 text-sm font-bold rounded-full">WEB</span>
-        <span class="px-3 py-1 bg-cyan-100 text-cyan-700 text-sm font-bold rounded-full">Full Stack</span>
+        <span class="px-3 py-1 bg-indigo-100 text-indigo-600 text-sm font-bold rounded-full">Web</span>
         <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm font-bold rounded-full">ERP / CRM</span>
       </div>
       <h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">

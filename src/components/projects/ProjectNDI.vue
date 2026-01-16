@@ -48,7 +48,7 @@ const closeLightbox = () => {
   <article>
     <header class="mb-12">
       <div class="flex flex-wrap gap-3 mb-4">
-        <span class="px-3 py-1 bg-indigo-100 text-indigo-600 text-sm font-bold rounded-full">Web</span>
+        <span class="px-3 py-1 bg-indigo-100 text-indigo-600 text-sm font-bold rounded-full">WEB</span>
         <span class="px-3 py-1 bg-amber-100 text-amber-700 text-sm font-bold rounded-full">Hackathon</span>
       </div>
       <h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
