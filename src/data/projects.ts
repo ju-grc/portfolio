@@ -1,4 +1,5 @@
 import imgNDI from '@/assets/img/projets/ndi25/NUIT INFO 2025.png';
+import imgAPI from '@/assets/img/projets/critiquejus/api.png';
 import imgGrabastar from '@/assets/img/projets/grabastar/4.jpg';
 import imgCapitalWars from '@/assets/img/projets/capitalwars/capital-wars.png';
 import imgPrivateBin from '@/assets/img/projets/privatebin/privatebin_0.png';
@@ -18,7 +19,7 @@ export const projects = [
     title: "API Gestion de Critiques de Jus",
     category: "Data",
     shortDescription: "Architecture complète séparant le backend (API Platform) du frontend.",
-    image: "",
+    image: imgAPI,
     techs: ["Symfony", "APIPlatform", "Vue.js"],
   },
   {

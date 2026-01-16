@@ -4,9 +4,11 @@ import { useRoute, RouterLink } from 'vue-router';
 import Contact from '@/components/Contact.vue';
 
 import ProjectNDI from '@/components/projects/ProjectNDI.vue';
+import ProjectGrabastar from '@/components/projects/ProjectGrabastar.vue';
 import ProjectPrivatebin from '@/components/projects/ProjectPrivatebin.vue';
 import ProjectInterfaceComptable from "@/components/projects/ProjectInterfaceComptable.vue";
 import Projectecommerce from "@/components/projects/Projectecommerce.vue";
+import ProjectApiCritique from "@/components/projects/ProjectApiCritique.vue";
 
 const route = useRoute();
 const projectId = Number(route.params.id);
@@ -14,9 +16,9 @@ const projectId = Number(route.params.id);
 const projectComponent = computed(() => {
   switch (projectId) {
     case 1: return ProjectNDI;
-    // case 2: return ProjectCritiqueJus;
+    case 2: return ProjectApiCritique;
     // case 3: return ProjectGrabastar;
-    // case 4: return ProjectCapital;
+    case 4: return ProjectGrabastar;
     case 5: return ProjectPrivatebin;
     case 6: return ProjectInterfaceComptable;
     case 7: return Projectecommerce;
